@@ -104,10 +104,6 @@ h6 {
 .nav-link:hover,
 .header-contact:focus,
 .header-contact:hover {
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-
   color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -120,7 +116,7 @@ h6 {
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
-  line-height: 1.14;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   align-items: center;
   justify-content: center;
@@ -302,7 +298,7 @@ h6 {
 .team-social-links {
   display: flex;
   justify-content: center;
-  padding-top: 16px;
+  margin-top: 16px;
   gap: 10px;
 }
 .social-link-team {
@@ -419,7 +415,11 @@ h6 {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.project-item:hover {
+.project-link {
+  display: block;
+  text-decoration: none;
+}
+.project-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -467,6 +467,7 @@ h6 {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .adress-footer > .logo {
   display: block;
@@ -476,12 +477,14 @@ h6 {
   margin-right: 70px;
 }
 .footer-title {
+  margin: 0;
   display: flex;
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
+  text-align: center;
 }
 .footer {
   display: flex;
@@ -510,7 +513,8 @@ h6 {
   width: 20px;
   height: 20px;
 }
-.twitter {
+.social-link-footer:focus,
+.social-link-footer:hover {
   fill: var(--white-color);
   background-color: var(--accent-color);
 }
